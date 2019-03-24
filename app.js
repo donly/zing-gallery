@@ -2,8 +2,7 @@ require('events').EventEmitter.prototype._maxListeners = 100;
 var resize = require('./lib/resize'),
 cfg = require('./config'),
 express = require('express'),
-port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000,
-host = '0.0.0.0';
+port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000;
 
 var photosPath = './resources/photos';
 resize.init(photosPath)
@@ -24,6 +23,4 @@ app.use('/', require('./lib/gallery.js')(Object.assign({
 });
 
 
-app.listen(port, host);
-host = host || 'localhost';
-console.log('zing-gallery listening on ' + host  + ':' + port);
+app.listen(port, () => console.log(`Listening on ${ port }`));
