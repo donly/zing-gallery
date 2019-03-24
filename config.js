@@ -1,25 +1,28 @@
 module.exports = {
 	cdnDomain: '/',
-	title: 'Zing Gallery',
+	title: '花汐Cake',
 	avatar: './img/avatar.png',
 	wording: {
 		noAccess: '抱歉，你没有权限访问'
 	},
 	albums: {
-		"青海湖": {
-			thumbnail: "打马而过.jpg",
+		"1.蛋黄酥": {
+			thumbnail: "你心里藏着谁.jpg",
 		  sort: 1
 		}, 
-		"江南小镇": {
-		  description : "没有什么能够阻挡",
-			thumbnail: "燕歌行.jpg",
-		  name: "南浔"
+		"3.吐司": {
+		  description : "吐司面包，口感柔软",
+			thumbnail: "吐司.jpg",
+			name: "吐司面包",
+			sort: 2
 		},
-		"私密": {
-			description: "这是一个需要密码的相册",
-		  name: "私密",
-		  password: "233",
-			passwordTips: "密码是233"
+		"0.准备上架作品": {
+			description: "敬请期待..",
+			sort: 4
+		},
+		"6.蜂蜜餐包": {
+			"description" : "新作品，正在改良中……",
+			"password": "1233",
 		}
 	}
 }

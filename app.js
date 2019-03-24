@@ -3,7 +3,7 @@ var resize = require('./lib/resize'),
 cfg = require('./config'),
 express = require('express'),
 port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 3000,
-host = process.env.OPENSHIFT_NODEJS_IP;
+host = '0.0.0.0';
 
 var photosPath = './resources/photos';
 resize.init(photosPath)
@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/assets/dist/'));
 app.use('/', require('./lib/gallery.js')(Object.assign({
   staticFiles : 'resources/photos',
   urlRoot : '/',
-  title : 'Zing Gallery',
+  title : '花汐Cake',
   render : false
 }, cfg)), function(req, res, next){
   return res.render('gallery', Object.assign({ 
