@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "css-loader": "^2.1.1",
+    "cwebp-bin": "^5.0.0",
     "ejs": "*",
     "exif": "*",
     "express": "*",
@@ -32,7 +33,6 @@
     "underscore": "*",
     "url-loader": "^1.1.2",
     "watch": "^1.0.1",
-    "webp-bin": "^0.1.4",
     "webpack": "^4.29.6"
   },
   "scripts": {
