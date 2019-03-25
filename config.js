@@ -16,13 +16,12 @@ module.exports = {
 			name: "吐司面包",
 			sort: 2
 		},
-		"0.准备上架作品": {
-			description: "敬请期待..",
+		"8.准备上架作品": {
+			description: "请扫码关心我们，敬请期待..",
 			sort: 4
 		},
 		"6.蜂蜜餐包": {
 			"description" : "新作品，正在改良中……",
-			"password": "1233",
 		}
 	}
 }
